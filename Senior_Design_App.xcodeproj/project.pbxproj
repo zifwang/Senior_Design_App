@@ -13,6 +13,8 @@
 		9C7849D42089510200024910 /* Senior_Design_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C7849D22089510200024910 /* Senior_Design_App.xcdatamodeld */; };
 		9C7849D62089510300024910 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C7849D52089510300024910 /* Assets.xcassets */; };
 		9C7849D92089510300024910 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7849D72089510300024910 /* LaunchScreen.storyboard */; };
+		9C7849E2208951A700024910 /* Room_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7849E1208951A700024910 /* Room_List.swift */; };
+		9C7849E52089556800024910 /* Installation Guide.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9C7849E42089556800024910 /* Installation Guide.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9C7849D52089510300024910 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C7849D82089510300024910 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C7849DA2089510300024910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C7849E1208951A700024910 /* Room_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room_List.swift; sourceTree = "<group>"; };
+		9C7849E42089556800024910 /* Installation Guide.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Installation Guide.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		9C7849CA2089510200024910 /* Senior_Design_App */ = {
 			isa = PBXGroup;
 			children = (
+				9C7849E32089555C00024910 /* Installation Guide */,
+				9C7849E02089515600024910 /* Supporting Files */,
 				9C7849CB2089510200024910 /* AppDelegate.swift */,
 				9C7849CD2089510200024910 /* ViewController.swift */,
 				9C7849CF2089510200024910 /* Main.storyboard */,
@@ -65,6 +71,22 @@
 				9C7849D22089510200024910 /* Senior_Design_App.xcdatamodeld */,
 			);
 			path = Senior_Design_App;
+			sourceTree = "<group>";
+		};
+		9C7849E02089515600024910 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C7849E1208951A700024910 /* Room_List.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C7849E32089555C00024910 /* Installation Guide */ = {
+			isa = PBXGroup;
+			children = (
+				9C7849E42089556800024910 /* Installation Guide.pdf */,
+			);
+			path = "Installation Guide";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +149,7 @@
 			files = (
 				9C7849D92089510300024910 /* LaunchScreen.storyboard in Resources */,
 				9C7849D62089510300024910 /* Assets.xcassets in Resources */,
+				9C7849E52089556800024910 /* Installation Guide.pdf in Resources */,
 				9C7849D12089510200024910 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +163,7 @@
 			files = (
 				9C7849CE2089510200024910 /* ViewController.swift in Sources */,
 				9C7849CC2089510200024910 /* AppDelegate.swift in Sources */,
+				9C7849E2208951A700024910 /* Room_List.swift in Sources */,
 				9C7849D42089510200024910 /* Senior_Design_App.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
