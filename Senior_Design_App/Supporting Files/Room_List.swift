@@ -178,4 +178,13 @@ class Room_List: UITableViewController {
         room.append(r)
         print("\(room)")
     }
+    
+    // go to next panel which has room properties
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "show_room_properties", sender: tableView.cellForRow(at: indexPath))
+    }
+    
+    
+    
+    
 }
