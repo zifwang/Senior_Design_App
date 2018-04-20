@@ -16,6 +16,7 @@
 		9C7849E2208951A700024910 /* Room_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7849E1208951A700024910 /* Room_List.swift */; };
 		9C7849E52089556800024910 /* Installation Guide.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9C7849E42089556800024910 /* Installation Guide.pdf */; };
 		9C7849E720897A1000024910 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C7849E620897A1000024910 /* Images.xcassets */; };
+		9C784A80208A4CED00024910 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C784A7E208A4CED00024910 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,9 @@
 		9C7849E1208951A700024910 /* Room_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room_List.swift; sourceTree = "<group>"; };
 		9C7849E42089556800024910 /* Installation Guide.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Installation Guide.pdf"; sourceTree = "<group>"; };
 		9C7849E620897A1000024910 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9C784A7D208A4CEC00024910 /* Senior_Design_App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Senior_Design_App-Bridging-Header.h"; sourceTree = "<group>"; };
+		9C784A7E208A4CED00024910 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		9C784A7F208A4CED00024910 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		9C7849CA2089510200024910 /* Senior_Design_App */ = {
 			isa = PBXGroup;
 			children = (
+				9C784A7C208A4CB800024910 /* SWRevealController */,
 				9C7849E32089555C00024910 /* Installation Guide */,
 				9C7849E02089515600024910 /* Supporting Files */,
 				9C7849CB2089510200024910 /* AppDelegate.swift */,
@@ -90,6 +95,16 @@
 				9C7849E42089556800024910 /* Installation Guide.pdf */,
 			);
 			path = "Installation Guide";
+			sourceTree = "<group>";
+		};
+		9C784A7C208A4CB800024910 /* SWRevealController */ = {
+			isa = PBXGroup;
+			children = (
+				9C784A7F208A4CED00024910 /* SWRevealViewController.h */,
+				9C784A7E208A4CED00024910 /* SWRevealViewController.m */,
+				9C784A7D208A4CEC00024910 /* Senior_Design_App-Bridging-Header.h */,
+			);
+			path = SWRevealController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +139,7 @@
 				TargetAttributes = {
 					9C7849C72089510200024910 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -167,6 +183,7 @@
 			files = (
 				9C7849CE2089510200024910 /* ViewController.swift in Sources */,
 				9C7849CC2089510200024910 /* AppDelegate.swift in Sources */,
+				9C784A80208A4CED00024910 /* SWRevealViewController.m in Sources */,
 				9C7849E2208951A700024910 /* Room_List.swift in Sources */,
 				9C7849D42089510200024910 /* Senior_Design_App.xcdatamodeld in Sources */,
 			);
@@ -313,6 +330,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M67395SRF;
 				INFOPLIST_FILE = Senior_Design_App/Info.plist;
@@ -322,6 +340,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "zifwang.Senior-Design-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Senior_Design_App/SWRevealController/Senior_Design_App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -332,6 +352,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M67395SRF;
 				INFOPLIST_FILE = Senior_Design_App/Info.plist;
@@ -341,6 +362,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "zifwang.Senior-Design-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Senior_Design_App/SWRevealController/Senior_Design_App-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
