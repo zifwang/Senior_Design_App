@@ -20,9 +20,13 @@ class Room_List: UITableViewController {
             let textField = alert.textFields![0] as UITextField
             //            self.names.append(textField.text!)
             
+            //print("There are \(self.room.count) rooms")
+            //print("The last room is at the position: \(self.room.count - 1).")
+            
             self.saveName(text: textField.text!)
             
             let indexPath = IndexPath(row: self.room.count - 1, section: 0)
+            //print("Inserting at position: \(indexPath)")
             self.tableView.insertRows(at: [indexPath], with: .automatic)
             //            self.tableView.reloadData()
         }
@@ -106,6 +110,7 @@ class Room_List: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        print("There are: \(room.count) rooms")
         return room.count
     }
     
@@ -120,6 +125,37 @@ class Room_List: UITableViewController {
         return cell
     }
     
+    
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let action = UIContextualAction(style: .destructive, title: "Delete") { (action, view, completion) in
+            // TODO: Delete room
+            // call data struct to save the new result
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let context:NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+            
+            // Get position of selected item
+            let pos = indexPath.row
+            // Remove data from coreDataStack
+            context.delete(self.room[indexPath.row])
+            // Remove data from our room array
+            self.room.remove(at: pos)
+            do {
+                try context.save()
+                print("The Deleting position is: \(indexPath.row)")
+                // Reload tableView
+                tableView.reloadData()
+                completion(true)
+            } catch {
+                print("Delete failed: \(error)")
+                completion(false)
+            }
+        }
+            
+        action.image = #imageLiteral(resourceName: "trash")
+        action.backgroundColor = .red
+            
+        return UISwipeActionsConfiguration(actions: [action])
+    }
     
     
     private func saveName(text: String) {
@@ -140,5 +176,6 @@ class Room_List: UITableViewController {
         }
         
         room.append(r)
+        print("\(room)")
     }
 }
