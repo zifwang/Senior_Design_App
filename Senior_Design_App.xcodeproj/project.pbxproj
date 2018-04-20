@@ -19,6 +19,7 @@
 		9C784A80208A4CED00024910 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C784A7E208A4CED00024910 /* SWRevealViewController.m */; };
 		9C784A82208A4F2900024910 /* SWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C784A81208A4F2900024910 /* SWViewController.swift */; };
 		9C784A84208A51DD00024910 /* BackTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C784A83208A51DD00024910 /* BackTableVC.swift */; };
+		9C784A86208A9C2500024910 /* SWViewControllerTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C784A85208A9C2500024910 /* SWViewControllerTwo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		9C784A7F208A4CED00024910 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		9C784A81208A4F2900024910 /* SWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWViewController.swift; sourceTree = "<group>"; };
 		9C784A83208A51DD00024910 /* BackTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
+		9C784A85208A9C2500024910 /* SWViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWViewControllerTwo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				9C7849E1208951A700024910 /* Room_List.swift */,
 				9C784A81208A4F2900024910 /* SWViewController.swift */,
 				9C784A83208A51DD00024910 /* BackTableVC.swift */,
+				9C784A85208A9C2500024910 /* SWViewControllerTwo.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				9C7849E2208951A700024910 /* Room_List.swift in Sources */,
 				9C784A84208A51DD00024910 /* BackTableVC.swift in Sources */,
 				9C7849D42089510200024910 /* Senior_Design_App.xcdatamodeld in Sources */,
+				9C784A86208A9C2500024910 /* SWViewControllerTwo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
