@@ -285,6 +285,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="NYK-vf-QdO"/>
         <segue reference="TTg-Og-hBU"/>
         <segue reference="Mzy-9S-ODM"/>
     </inferredMetricsTieBreakers>

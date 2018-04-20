@@ -110,7 +110,7 @@ class Room_List: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        print("There are: \(room.count) rooms")
+        // print("There are: \(room.count) rooms")
         return room.count
     }
     
