@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,34 +18,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="APOLLO" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uFD-64-qCo">
-                                <rect key="frame" x="54" y="374" width="266" height="64"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Smart Wire Light Switch" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LJi-Og-BL3">
-                                <rect key="frame" x="130" y="425" width="229" height="31"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Smart Wire Light Switch" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0qj-YX-RVV">
+                                <rect key="frame" x="16" y="442" width="343" height="25"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="APOLLO" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YlM-Ct-wD5">
+                                <rect key="frame" x="16" y="381" width="343" height="55"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="uFD-64-qCo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="8Zn-bO-fFs"/>
-                            <constraint firstItem="uFD-64-qCo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DvU-Yc-Aoh"/>
-                            <constraint firstItem="uFD-64-qCo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="286" id="I9P-8P-cyH"/>
-                            <constraint firstItem="uFD-64-qCo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TGg-YB-zRN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="LJi-Og-BL3" secondAttribute="bottom" constant="322" id="aRo-si-uDX"/>
-                            <constraint firstItem="LJi-Og-BL3" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dAI-Ss-Wqf"/>
-                            <constraint firstItem="LJi-Og-BL3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="337" id="ux7-Vd-yVE"/>
+                            <constraint firstItem="YlM-Ct-wD5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5dn-8q-0fg"/>
+                            <constraint firstItem="YlM-Ct-wD5" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="6ET-TQ-Iiq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0qj-YX-RVV" secondAttribute="trailing" constant="16" id="AIh-TE-v5m"/>
+                            <constraint firstItem="0qj-YX-RVV" firstAttribute="top" secondItem="YlM-Ct-wD5" secondAttribute="bottom" constant="6" id="MiM-wg-7TF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YlM-Ct-wD5" secondAttribute="trailing" constant="16" id="VeM-NM-S7B"/>
+                            <constraint firstItem="0qj-YX-RVV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vlM-xK-w3z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="2ZB-Ml-aYb">
                         <barButtonItem key="leftBarButtonItem" id="rqB-zH-t8T">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UCh-3s-ZZx">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UCh-3s-ZZx">
                                 <rect key="frame" x="16" y="3.6666666666666679" width="144" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
@@ -59,22 +58,21 @@
                             </button>
                             <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" id="rij-B1-coc">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AGp-pT-r1W">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="ByC-07-tND">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kGO-R8-ZV3">
                                 <rect key="frame" x="276" y="3.6666666666666679" width="83" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
+                                <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Next"/>
                                 <connections>
-                                    <action selector="To_Room_List:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aPa-yb-TgR"/>
-                                    <segue destination="lT1-jU-vyj" kind="show" identifier="segue_to_room_list" id="jYF-iV-Q4A"/>
+                                    <action selector="To_Room_List:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ymH-nO-oyP"/>
+                                    <segue destination="lT1-jU-vyj" kind="show" identifier="segue_to_room_list" id="noh-mM-ofu"/>
                                 </connections>
                             </button>
-                            <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

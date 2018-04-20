@@ -15,6 +15,7 @@
 		9C7849D92089510300024910 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7849D72089510300024910 /* LaunchScreen.storyboard */; };
 		9C7849E2208951A700024910 /* Room_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7849E1208951A700024910 /* Room_List.swift */; };
 		9C7849E52089556800024910 /* Installation Guide.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9C7849E42089556800024910 /* Installation Guide.pdf */; };
+		9C7849E720897A1000024910 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C7849E620897A1000024910 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		9C7849DA2089510300024910 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C7849E1208951A700024910 /* Room_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room_List.swift; sourceTree = "<group>"; };
 		9C7849E42089556800024910 /* Installation Guide.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Installation Guide.pdf"; sourceTree = "<group>"; };
+		9C7849E620897A1000024910 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				9C7849D72089510300024910 /* LaunchScreen.storyboard */,
 				9C7849DA2089510300024910 /* Info.plist */,
 				9C7849D22089510200024910 /* Senior_Design_App.xcdatamodeld */,
+				9C7849E620897A1000024910 /* Images.xcassets */,
 			);
 			path = Senior_Design_App;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C7849D92089510300024910 /* LaunchScreen.storyboard in Resources */,
+				9C7849E720897A1000024910 /* Images.xcassets in Resources */,
 				9C7849D62089510300024910 /* Assets.xcassets in Resources */,
 				9C7849E52089556800024910 /* Installation Guide.pdf in Resources */,
 				9C7849D12089510200024910 /* Main.storyboard in Resources */,
@@ -308,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M67395SRF;
 				INFOPLIST_FILE = Senior_Design_App/Info.plist;
@@ -326,6 +331,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M67395SRF;
 				INFOPLIST_FILE = Senior_Design_App/Info.plist;
