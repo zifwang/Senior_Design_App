@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E845622189026E1BFDC5FD0 /* Pods_Senior_Design_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD131D1E21F291E13D5577D7 /* Pods_Senior_Design_App.framework */; };
 		9C7849CC2089510200024910 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7849CB2089510200024910 /* AppDelegate.swift */; };
 		9C7849CE2089510200024910 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7849CD2089510200024910 /* ViewController.swift */; };
 		9C7849D12089510200024910 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C7849CF2089510200024910 /* Main.storyboard */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5FFD2327FD3B6A340CB4896F /* Pods-Senior_Design_App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Senior_Design_App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Senior_Design_App/Pods-Senior_Design_App.debug.xcconfig"; sourceTree = "<group>"; };
+		93E1BACB46EFF36ACD44AF59 /* Pods-Senior_Design_App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Senior_Design_App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Senior_Design_App/Pods-Senior_Design_App.release.xcconfig"; sourceTree = "<group>"; };
 		9C7849C82089510200024910 /* Senior_Design_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Senior_Design_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C7849CB2089510200024910 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C7849CD2089510200024910 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		9C784A81208A4F2900024910 /* SWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWViewController.swift; sourceTree = "<group>"; };
 		9C784A83208A51DD00024910 /* BackTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackTableVC.swift; sourceTree = "<group>"; };
 		9C784A85208A9C2500024910 /* SWViewControllerTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWViewControllerTwo.swift; sourceTree = "<group>"; };
+		FD131D1E21F291E13D5577D7 /* Pods_Senior_Design_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Senior_Design_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E845622189026E1BFDC5FD0 /* Pods_Senior_Design_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D2429246AF676A6FBB6D694 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FFD2327FD3B6A340CB4896F /* Pods-Senior_Design_App.debug.xcconfig */,
+				93E1BACB46EFF36ACD44AF59 /* Pods-Senior_Design_App.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		786BF0EF4D3FD0B43FA6AE25 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD131D1E21F291E13D5577D7 /* Pods_Senior_Design_App.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9C7849BF2089510200024910 = {
 			isa = PBXGroup;
 			children = (
 				9C7849CA2089510200024910 /* Senior_Design_App */,
 				9C7849C92089510200024910 /* Products */,
+				4D2429246AF676A6FBB6D694 /* Pods */,
+				786BF0EF4D3FD0B43FA6AE25 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,9 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C7849DD2089510300024910 /* Build configuration list for PBXNativeTarget "Senior_Design_App" */;
 			buildPhases = (
+				46C870FBCDFD40696E7FA155 /* [CP] Check Pods Manifest.lock */,
 				9C7849C42089510200024910 /* Sources */,
 				9C7849C52089510200024910 /* Frameworks */,
 				9C7849C62089510200024910 /* Resources */,
+				3FB2E2504770147C2CCFF43C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,6 +210,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3FB2E2504770147C2CCFF43C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Senior_Design_App/Pods-Senior_Design_App-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Senior_Design_App/Pods-Senior_Design_App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46C870FBCDFD40696E7FA155 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Senior_Design_App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9C7849C42089510200024910 /* Sources */ = {
@@ -339,6 +404,7 @@
 		};
 		9C7849DE2089510300024910 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FFD2327FD3B6A340CB4896F /* Pods-Senior_Design_App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -346,10 +412,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M67395SRF;
 				INFOPLIST_FILE = Senior_Design_App/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zifwang.Senior-Design-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Senior_Design_App/SWRevealController/Senior_Design_App-Bridging-Header.h";
@@ -361,6 +424,7 @@
 		};
 		9C7849DF2089510300024910 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93E1BACB46EFF36ACD44AF59 /* Pods-Senior_Design_App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -368,10 +432,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M67395SRF;
 				INFOPLIST_FILE = Senior_Design_App/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zifwang.Senior-Design-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Senior_Design_App/SWRevealController/Senior_Design_App-Bridging-Header.h";

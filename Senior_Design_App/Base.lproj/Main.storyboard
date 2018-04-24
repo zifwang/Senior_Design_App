@@ -235,7 +235,19 @@
                     <view key="view" contentMode="scaleToFill" id="eid-21-dcu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="feg-ib-3Nx" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="183" width="343" height="301"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="feg-ib-3Nx" firstAttribute="top" secondItem="KwH-0I-WyO" secondAttribute="top" constant="119" id="A7l-iJ-NtO"/>
+                            <constraint firstItem="feg-ib-3Nx" firstAttribute="leading" secondItem="KwH-0I-WyO" secondAttribute="leading" constant="16" id="Fub-cp-DlB"/>
+                            <constraint firstItem="KwH-0I-WyO" firstAttribute="bottom" secondItem="feg-ib-3Nx" secondAttribute="bottom" constant="183" id="TYe-DG-H10"/>
+                            <constraint firstItem="KwH-0I-WyO" firstAttribute="trailing" secondItem="feg-ib-3Nx" secondAttribute="trailing" constant="16" id="eFR-tp-IuE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="KwH-0I-WyO"/>
                     </view>
                     <navigationItem key="navigationItem" id="3cL-3U-r4c">
@@ -252,11 +264,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="Open" destination="Rj4-Ka-UGT" id="0qp-UN-OXI"/>
+                        <outlet property="lineChartView" destination="feg-ib-3Nx" id="ZhY-Cs-hz8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lfq-nt-uBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6263" y="-295"/>
+            <point key="canvasLocation" x="6261.6000000000004" y="-295.50224887556226"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="wHV-TV-cTu">

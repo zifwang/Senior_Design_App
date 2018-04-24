@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import Charts
 
 class SWViewControllerTwo: UIViewController {
 
     @IBOutlet weak var Open: UIBarButtonItem!
+    
+    @IBOutlet weak var lineChartView: LineChartView!
     
     @IBAction func Back(_ sender: Any) {
         performSegue(withIdentifier: "show_room_list_two", sender: self)
@@ -23,6 +26,7 @@ class SWViewControllerTwo: UIViewController {
         
         // Call the slideOutMenus action
         slideOutMenus()
+        setChartValues()
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,5 +58,15 @@ class SWViewControllerTwo: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    func setChartValues(_ count : Int = 20) {
+        let values = (0..<count).map{ (i)->ChartDataEntry in
+            let val = Double(arc4random_uniform(UInt32(count))+3)
+            return ChartDataEntry(x: Double(i), y: val)
+        }
+        let set1 = LineChartDataSet(values: values, label: "DataSet 1")
+        let data = LineChartData(dataSet: set1)
+        
+        self.lineChartView.data = data
+    }
 
 }
